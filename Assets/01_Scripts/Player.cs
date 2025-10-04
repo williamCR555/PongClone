@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
    string down;
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +51,8 @@ public class Player : MonoBehaviour
     }
     public void Movement()
     {
-  
+      
+
         float y = 0;
         if (Input.GetKey(up))
         {
