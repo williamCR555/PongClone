@@ -1,0 +1,16 @@
+# Ignorar carpeta de Visual Studio
+.vs/
+
+# Ignorar carpetas generadas por Unity
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Ignorar archivos de Visual Studio
+*.csproj
+*.sln
+*.user
