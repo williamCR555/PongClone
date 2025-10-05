@@ -16,8 +16,7 @@ public class Player : MonoBehaviour
    string down;
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-    public bool isPause=false;
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,31 +46,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isPause)
-        {
-            if (!isPlayerWall) Movement();
-
-        }
-        else
-        {
-
-            if (!isPlayerWall) rb.velocity = new Vector2(0, 0) ;
-        }
+        if (!isPlayerWall) Movement();
 
     }
-    public void Paused()
-    {
-        isPause = true;
-    }
-    public void Play()
-    {
-        isPause = false;
-    }
-
     public void Movement()
     {
-      
-
+  
         float y = 0;
         if (Input.GetKey(up))
         {
